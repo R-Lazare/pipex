@@ -33,4 +33,4 @@ re : fclean all
 
 bonus : clean
 	make all -C libft
-	gcc $(CFLAGS) $(SRCS_BONUS) -fPIE -o $(NAME)
+	cc $(CFLAGS) $(SRCS_BONUS) -fPIE -o $(NAME)

@@ -6,7 +6,7 @@
 /*   By: rluiz <rluiz@student.42lehavre.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 14:09:15 by rluiz             #+#    #+#             */
-/*   Updated: 2023/10/18 15:53:25 by rluiz            ###   ########.fr       */
+/*   Updated: 2023/10/19 15:46:51 by rluiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void	here_doc_put_in(char **av, int *p_fd)
 	while (1)
 	{
 		ret = get_next_line(0);
+		printf("ret = %s\n", ret);
 		if (ft_strncmp(ret, av[2], ft_strlen(av[2])) == 0)
 			exit(0);
 		ft_putstr_fd(ret, p_fd[1]);
